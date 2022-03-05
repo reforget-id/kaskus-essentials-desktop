@@ -1,0 +1,116 @@
+#kas-ess-settings {
+    background-color: ghostwhite;
+    margin-right: 2px;
+    overflow-y: hidden;
+    padding: 12px 0 12px 12px;
+
+    #kas-ess-settings_wrapper {
+        overflow-y: scroll;
+        max-height: 93%;
+    }
+
+    #kas-ess-settings_header {
+        background-color: ghostwhite;
+        position: sticky;
+        top: 0;
+        padding-bottom: 5px;
+        font-family: monospace;
+        font-size: 19px !important;
+        font-weight: bold;
+
+        &::before {
+            background-size: 23px;
+            background: url('https://s.kaskus.id/themes_3.0/mobile/images/logo-n.svg') no-repeat;
+            content: '';
+            display: inline-block;
+            height: 24px;
+            padding-right: 5px;
+            position: absolute;
+            transform: translateX(-100%);
+            width: 24px;
+        }
+    }
+
+    .section_header_holder {
+        margin-right: 20px;
+    }
+
+    .config_var {
+        margin: 0 0 10px 0;
+    }
+
+    a, button, input {
+        font-size: .8em !important;
+    }
+
+    .section_desc {
+        font-size: 14px !important;
+        color: whitesmoke !important;
+        background-color: #333;
+        border: 1px solid #222;
+        margin: 15px 0 10px 0;
+        padding: 2px 0;
+    }
+
+    .config_header, .section_desc {
+        cursor: default;
+    }
+
+    .section_header {
+        cursor: default;
+        background-color: #454545;
+        border: 1px solid #222;
+        font-size: 1em !important;
+    }
+
+    .field_label, .option_label {
+        font-size: 13px;
+        font-weight: unset;
+    }
+
+    .multicheckbox > ul, .multiselect > ul {
+        margin: 0;
+    }
+
+    .multicheckbox > ul > li, .multiselect > ul > li {
+        display: inline-block;
+    }
+
+    #kas-ess-settings_buttons_holder {
+        background-color: ghostwhite;
+        position: fixed;
+        width: 91%;
+        bottom: 8px;
+    }
+
+    #kas-ess-settings_field_kaskusThread,
+    #kas-ess-settings_field_github,
+    #kas-ess-settings_field_wiki,
+    #kas-ess-settings_field_reportIssue {
+        background: none !important;
+        border: none !important;
+        cursor: pointer !important;
+        padding: 0 !important;
+        text-decoration: underline !important;
+
+        &:hover {
+            filter: drop-shadow(0 0 1px gray);
+        }
+    }
+
+    .reset_holder {
+        float: left;
+        position: relative;
+        bottom: -1em;
+    }
+
+    .saveclose_buttons {
+        margin: .7em;
+    }
+
+    #kas-ess-settings_resetLink {
+        &:hover {
+            filter: drop-shadow(0 0 1px gray);
+        }
+    }
+}

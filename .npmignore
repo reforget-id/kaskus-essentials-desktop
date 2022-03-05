@@ -1,0 +1,8 @@
+node_modules
+*.log
+.idea
+.babelrc
+.awcache
+.userscripter-temp
+dist/
+swe

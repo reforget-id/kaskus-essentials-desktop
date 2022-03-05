@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~src/*": [
+        "./src/*"
+      ],
+      "~lib/*": [
+        "./src/libs/*"
+      ],
+      "~operations/*": [
+        "./src/operations/*"
+      ]
+    },
+    "target": "es6",
+    "strict": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "jsx": "react",
+    "jsxFactory": "h"
+  },
+  "include": [
+    "./src/*.d.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "./src/libs/gm-api.ts",
+    "./src/libs/gm-config.ts",
+    "./src/libs/scope-functions.ts",
+    "./src/libs/prototype.ts"
+  ]
+}

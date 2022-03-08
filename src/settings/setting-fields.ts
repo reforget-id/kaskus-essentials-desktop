@@ -3,7 +3,7 @@ import * as OPTIONS from '~src/settings/field-options'
 const maxReplyArray = Array.from(Array(19), (v, i) => i + 1).map(String)
 maxReplyArray.push('20+')
 
-const kaskusThreadURL = 'https://www.kaskus.co.id/@ffsuperteam/'
+const kaskusThreadURL = 'https://www.kaskus.co.id/@ffsuperteam/' // TODO : Update link kaskus thread
 const githubURL = 'https://github.com/reforget-id/kaskus-essentials-desktop'
 const wikiURL = githubURL + '/wiki'
 const reportURL = githubURL + '/issues'
@@ -58,7 +58,7 @@ export const fields = { //Record<string, Field>
     },
     fabFormReply: {
         name: 'fabFormReply',
-        label: 'Gunakan floating button untuk kotak post reply ',
+        label: 'Gunakan floating action button untuk kotak quick reply ',
         labelPos: 'right',
         type: 'checkbox',
         default: true,

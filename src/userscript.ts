@@ -1,9 +1,9 @@
 export default {
     id: 'kaskus-essentials-desktop',
     name: 'Kaskus Essentials (Desktop)',
-    version: '0.8.0',
+    version: '0.8.1',
     description: 'Untuk pengalaman ngaskus yang lebih baik',
-    author: 'ffsuperteam; reforget-id',
+    author: 'reforget-id (ffsuperteam)',
     hostname: 'www.kaskus.co.id',
     sitename: 'Kaskus',
     namespace: 'kaskus-essentials-desktop',
@@ -12,6 +12,8 @@ export default {
     icon: 'https://s.kaskus.id/themes_3.0/mobile/images/logo-n.svg',
     homepageURL: 'https://github.com/reforget-id/kaskus-essentials-desktop',
     supportURL: 'https://github.com/reforget-id/kaskus-essentials-desktop/wiki',
+    updateURL: 'https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/dist/kaskus-essentials-desktop.meta.js',
+    downloadURL: 'https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/dist/kaskus-essentials-desktop.user.js',
     require: 'https://openuserjs.org/src/libs/sizzle/GM_config.js',
     grant: [
         'GM_setValue',

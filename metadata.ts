@@ -17,6 +17,8 @@ export default function (_: BuildConfig): Metadata {
         icon: U.icon,
         homepageURL: U.homepageURL,
         supportURL: U.supportURL,
+        updateURL: U.updateURL,
+        downloadURL: U.downloadURL,
         require: U.require,
         run_at: U.runAt,
         grant: U.grant,

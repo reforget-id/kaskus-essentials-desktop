@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Kaskus Essentials (Desktop)
-// @version      0.8.0
+// @version      0.8.1
 // @description  Untuk pengalaman ngaskus yang lebih baik
-// @author       ffsuperteam; reforget-id
+// @author       reforget-id (ffsuperteam)
 // @match        https://www.kaskus.co.id/*
 // @namespace    kaskus-essentials-desktop
 // @license      GPL-3.0-or-later; https://github.com/reforget-id/kaskus-essentials-desktop/blob/main/LICENSE

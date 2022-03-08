@@ -9,7 +9,7 @@ export default {
     namespace: 'kaskus-essentials-desktop',
     runAt: 'document-start',
     license: 'GPL-3.0-or-later; https://github.com/reforget-id/kaskus-essentials-desktop/blob/main/LICENSE',
-    icon: 'https://s.kaskus.id/themes_3.0/mobile/images/logo-n.svg',
+    icon: 'https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/icon.svg',
     homepageURL: 'https://github.com/reforget-id/kaskus-essentials-desktop',
     supportURL: 'https://github.com/reforget-id/kaskus-essentials-desktop/wiki',
     updateURL: 'https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/dist/kaskus-essentials-desktop.meta.js',

@@ -1,6 +1,6 @@
 <h1 align="center">
 <sub>
-<img  src="https://s.kaskus.id/themes_3.0/mobile/images/logo-n.svg" height="38" width="38">
+<img  src="https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/icon.svg" height="38" width="38">
 </sub>
 Kaskus Essentials Script (Desktop)
 </h1>

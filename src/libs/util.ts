@@ -11,3 +11,17 @@ export const url = {
 export function splitPath(pathname: string) {
     return pathname.split('/').filter(v => v)
 }
+
+export function URLOpener(url: string, newtab: boolean = false, foreground: boolean = true) {
+    const openInTabOption = {
+        active: foreground,
+        insert: true,
+        setParent: true,
+    }
+
+    if (newtab) {
+        GM_openInTab(url, openInTabOption)
+    } else {
+        window.location.href = url
+    }
+}

@@ -1,18 +1,13 @@
+import {URLOpener} from '~lib/util'
 import * as OPTIONS from '~src/settings/field-options'
 
 const maxReplyArray = Array.from(Array(19), (v, i) => i + 1).map(String)
 maxReplyArray.push('20+')
 
-const kaskusThreadURL = 'https://www.kaskus.co.id/@ffsuperteam/' // TODO : Update link kaskus thread
+const kaskusThreadURL = 'https://kask.us/iLYNX'
 const githubURL = 'https://github.com/reforget-id/kaskus-essentials-desktop'
 const wikiURL = githubURL + '/wiki'
 const reportURL = githubURL + '/issues'
-
-const openInTabOption = {
-    active: true,
-    insert: true,
-    setParent: true,
-} as const
 
 export const fields = { //Record<string, Field>
     wideHotThread: {
@@ -113,21 +108,21 @@ export const fields = { //Record<string, Field>
         section: ['', 'Support'],
         label: 'Kaskus Thread',
         type: 'button',
-        click: () => GM_openInTab(kaskusThreadURL, openInTabOption),
+        click: () => URLOpener(kaskusThreadURL, true, true),
     },
     github: {
         label: 'Github',
         type: 'button',
-        click: () => GM_openInTab(githubURL, openInTabOption),
+        click: () => URLOpener(githubURL, true, true),
     },
     wiki: {
         label: 'Wiki',
         type: 'button',
-        click: () => GM_openInTab(wikiURL, openInTabOption),
+        click: () => URLOpener(wikiURL, true, true),
     },
     reportIssue: {
-        label: 'Report Issue',
+        label: 'Report an Issue',
         type: 'button',
-        click: () => GM_openInTab(reportURL, openInTabOption),
+        click: () => URLOpener(reportURL, true, true),
     },
 }

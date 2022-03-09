@@ -2,7 +2,7 @@ import {ALWAYS} from 'userscripter/lib/environment'
 import {stylesheet, Stylesheets} from 'userscripter/lib/stylesheets'
 import {isOnChannelPage, isOnHomepage, isOnThreadPage} from '~src/environment'
 import * as SETTING from '~src/settings/setting'
-import animateCSS from './stylesheets/animate-css.scss'
+import animation from './stylesheets/animation.scss'
 import hotThread from './stylesheets/hot-thread.scss'
 import main from './stylesheets/main.scss'
 import thread from './stylesheets/thread.scss'
@@ -14,7 +14,7 @@ const STYLESHEETS = {
     }),
     animation: stylesheet({
         condition: ALWAYS,
-        css: animateCSS,
+        css: animation,
     }),
     thread: stylesheet({
         condition: _ => isOnThreadPage,

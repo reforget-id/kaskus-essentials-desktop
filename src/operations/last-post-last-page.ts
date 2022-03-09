@@ -1,6 +1,6 @@
 import {log} from 'userscripter'
 import URLBuilder from '~src/libs/url-builder'
-import {splitPath} from '~src/libs/util'
+import {splitPath, URLOpener} from '~src/libs/util'
 import * as SELECTOR from '~src/selector'
 import * as SETTING from '~src/settings/setting'
 import * as SITE from '~src/site'
@@ -20,7 +20,7 @@ export default () => {
 
     function checkThreadLastPage(threadID: string) {
         const openURL = new URLBuilder().path(SITE.PATH.THREAD, threadID, 'thread-name', '500').toString()
-        const targetWindow = SETTING.newTablastPost() ? '_blank' : '_top'
+        const newTab = SETTING.newTablastPost()
 
         GM_xmlhttpRequest({
             method: 'GET',
@@ -31,7 +31,7 @@ export default () => {
             timeout: 0,
             onerror: function () {
                 log.log(T.XHR.failedXHR)
-                window.open(openURL, targetWindow)
+                URLOpener(openURL, newTab, true)
             },
             onload: function (res) {
                 const postList = (<Document>res.response).getElementsByClassName(SITE.CLASS.postList)
@@ -44,10 +44,10 @@ export default () => {
                         .hash(lastPost.id)
                         .toString()
 
-                    window.open(postURL, targetWindow)
+                    URLOpener(postURL, newTab, true)
                 } else {
                     log.log(T.XHR.failedGetText)
-                    window.open(openURL, targetWindow)
+                    URLOpener(openURL, newTab, true)
                 }
             },
         })

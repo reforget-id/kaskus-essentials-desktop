@@ -35,7 +35,7 @@ Sebelum menggunakan script ini, sebaiknya gunakan adblocker seperti **uBlock Ori
 
 * **Browser :** Chromium (Chrome, Opera, Edge, dll) | Firefox
 * **Extension :** Tampermonkey | Violentmonkey
-* **Script :** [Greasy Fork](https://greasyfork.org/id/scripts/441154-kaskus-essentials-desktop) | [Github](https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/dist/kaskus-essentials-desktop.user.js) 
+* **Script :** [Direct Link Github](https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/dist/kaskus-essentials-desktop.user.js) | [Greasy Fork](https://greasyfork.org/id/scripts/441154-kaskus-essentials-desktop)
 
 Disarankan menggunakan browser dan extension versi terbaru untuk mencegah error yang tidak diinginkan.
 

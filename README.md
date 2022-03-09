@@ -34,10 +34,13 @@ Dalam hal pengembangan, Kaskus Essentials Script dibuat menggunakan [typescript]
 Sebelum menggunakan script ini, sebaiknya gunakan adblocker seperti **uBlock Origin** atau **AdGuard** untuk menghilangkan iklan. Kemudian gunakan filter [AdBlockID](https://github.com/realodix/AdBlockID) untuk menghilangkan embed kaskus tv.
 
 * **Browser :** Chromium (Chrome, Opera, Edge, dll) | Firefox
+* **Adblocker :** uBlock Origin | AdGuard
+* **Filter :** [AdBlockID](https://github.com/realodix/AdBlockID)
 * **Extension :** Tampermonkey | Violentmonkey
 * **Script :** [Direct Link Github](https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/dist/kaskus-essentials-desktop.user.js) | [Greasy Fork](https://greasyfork.org/id/scripts/441154-kaskus-essentials-desktop)
+* **Wajib login Kaskus**
 
-Disarankan menggunakan browser dan extension versi terbaru untuk mencegah error yang tidak diinginkan. Dan pastikan sudah login ke dalam kaskus.
+Disarankan menggunakan browser dan extension versi terbaru untuk mencegah error yang tidak diinginkan.
 
 ## Berkontribusi
 Script ini sangat bergantung dengan tampilan Kaskus dan tampilan Kaskus bisa berubah sewaktu-waktu. Meskipun hanya berubah sedikit, tapi bisa mengakibatkan script ini rusak dan tidak bisa bekerja.

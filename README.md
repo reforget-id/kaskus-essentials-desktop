@@ -1,12 +1,11 @@
-<h1 align="center">
-<sub>
-<img  src="https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/icon.svg" height="38" width="38">
-</sub>
-Kaskus Essentials Script (Desktop)
-</h1>
+<h2 align="center">
+  <img src="https://raw.githubusercontent.com/reforget-id/kaskus-essentials-desktop/main/icon.svg" height="55" width="55">
+  <br>
+  Kaskus Essentials Script (Desktop)
+</h2>
 <p align="center">
-<i>Untuk pengalaman ngaskus yang lebih baik</i>
-<br>
+  <i>Untuk pengalaman ngaskus yang lebih baik</i>
+  <br>
 </p>
 
 ***

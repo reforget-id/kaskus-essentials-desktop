@@ -19,6 +19,7 @@ export default () => {
 
     for (let i = 0; i < deletedReplies.length; i++) {
         if (!SETTING.removeDeletedPost.no()) deletedReplies[i].remove()
+        i--
     }
 
     nestedMutationObserver(nestedItemContent)

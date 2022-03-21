@@ -32,6 +32,7 @@ export const CLASS = {
     nestedbit: 'nestedbit',
     getNestedAD: 'getNestedAD',
     moreNested: 'moreNested',
+    prevNested: 'prevNested',
     loadMore: 'loadMoreAD',
     replyBox: 'simple-reply',
     smallReply: 'small-reply',
@@ -41,6 +42,8 @@ export const CLASS = {
     smiliesButtonWrapper: 'jsSmilies',
     stickyMultiquoteContainer: 'jsStickyMultiquote',
     stickyMultiquoteSubmit: 'jsStickyMultiquoteCounter',
+    reputationCount: 'vote-value',
+    voteWrapper: 'vote-wrapper',
 } as const
 
 export const ATTRIBUTE = {

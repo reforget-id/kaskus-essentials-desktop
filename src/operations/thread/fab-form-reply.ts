@@ -6,7 +6,7 @@ export default () => {
     const fab = document.createElement('div')
 
     quickReply.classList.add('D(n)', 'animate__animated', 'animate__fast')
-    fab.setAttribute('class', 'D(f) Cur(p) Jc(c) Ai(c) Pos(f) fab-form-reply')
+    fab.className = 'D(f) Cur(p) Jc(c) Ai(c) Pos(f) fab-form-reply'
     fab.innerHTML = '<i class="fa fa-plus Fz(20px)"></i>'
     quickReply.parentNode!.insertBefore(fab, quickReply)
 

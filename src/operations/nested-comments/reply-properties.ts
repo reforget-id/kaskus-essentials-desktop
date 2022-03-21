@@ -5,8 +5,11 @@ export default (reply: Element) => {
     const head = firstChild.querySelector(':scope > div:nth-of-type(2) > div')!
     const author = head.firstElementChild!
     const bodyText = reply.classSelector(CLASS.pageText)!
+    const postActions = reply.classSelector(CLASS.voteWrapper)!.parentElement!
+    const replyButton = reply.classSelector(CLASS.reply)!
     const container = document.createElement('div')
     const borderBottom = 'Bdb(borderSolidLightGrey)'
+    const borderTop = 'Bdt(borderSolidLightGrey)'
 
     switch (author.children.length) {
         case 3:
@@ -23,5 +26,7 @@ export default (reply: Element) => {
     firstChild.classList.add(borderBottom, 'Pb-0px')
     head.classList.add(borderBottom, 'Pb-10px')
     author.prepend(container)
-    bodyText.classList.add(borderBottom, 'reply-body')
+    bodyText.classList.add('reply-body')
+    postActions.classList.add(borderTop)
+    replyButton.classList.add('D(ib)', 'Py(3px)')
 }

@@ -1,6 +1,6 @@
 import {ALWAYS} from 'userscripter/lib/environment'
 import {stylesheet, Stylesheets} from 'userscripter/lib/stylesheets'
-import {isOnChannelPage, isOnHomepage, isOnThreadPage} from '~src/environment'
+import {isOnChannelPage, isOnHomepage, isOnThreadPage, isShowPostURL} from '~src/environment'
 import * as SETTING from '~src/settings/setting'
 import animation from './stylesheets/animation.scss'
 import hotThread from './stylesheets/hot-thread.scss'
@@ -17,7 +17,7 @@ const STYLESHEETS = {
         css: animation,
     }),
     thread: stylesheet({
-        condition: _ => isOnThreadPage,
+        condition: _ => isOnThreadPage || isShowPostURL,
         css: thread,
     }),
     hotThread: stylesheet({

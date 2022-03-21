@@ -15,7 +15,7 @@ export default () => {
 
     function setupGoToPage(pagination: Element, index: number) {
         const goToPage = document.createElement('form')
-        goToPage.classList.add('D(f)', 'Fx(flexOne)', 'Ai(c)')
+        goToPage.className = 'D(f) Fx(flexOne) Ai(c)'
         goToPage.innerHTML = `
         <input type="number" class="gotopage-input" value="${currentPage}" min="1" max="${lastPage}" required>
         <input type="submit" class="gotopage-button" value="Go">

@@ -12,8 +12,8 @@ export default (reply: Element) => {
 
     singleQuoteButton.applyIt(function () {
         this.href = 'javascript:void(0);'
+        this.className = CLASS.quoteClass
         this.setAttribute('onclick', clickAction)
-        this.setAttribute('class', CLASS.quoteClass)
         this.innerHTML = ` 
             <i class="fas C(c-secondary) fa-comment Mend(2px)"></i>
             <span class="C(c-secondary) Fz(12px)">Single Quote</span>
@@ -23,8 +23,8 @@ export default (reply: Element) => {
 
     multiQuoteButton.applyIt(function () {
         this.href = 'javascript:void(0);'
+        this.className = CLASS.quoteClass + ' jsButtonMultiquote'
         this.setAttribute('onclick', clickAction)
-        this.setAttribute('class', CLASS.quoteClass + ' jsButtonMultiquote')
         this.innerHTML = ` 
             <i class="fas C(c-secondary) fa-comments Mend(2px)"></i>
             <span class="C(c-secondary) Fz(12px)">Multi Quote</span>

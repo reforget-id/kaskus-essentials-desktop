@@ -1,5 +1,7 @@
 import replyProperties from '~operations/nested-comments/reply-properties'
+import replyReputation from '~operations/nested-comments/reply-reputation'
 import singleMultiQuote from '~operations/nested-comments/single-multi-quote'
+import {isShowPostURL} from '~src/environment'
 import * as SETTING from '~src/settings/setting'
 import {CLASS} from '~src/site'
 
@@ -18,7 +20,8 @@ export default (nestedItemContent: Element) => {
                     let reply = node as Element
                     reply.classList?.letIt(it => {
                         if (it.contains(CLASS.nestedbit)) {
-                            singleMultiQuote(reply)
+                            if (!isShowPostURL) singleMultiQuote(reply)
+                            if (SETTING.replyReputation()) replyReputation(reply)
                             replyProperties(reply)
                         } else if (it.contains(CLASS.deletedReply) && !SETTING.removeDeletedPost.no()) {
                             reply.remove()
@@ -26,8 +29,10 @@ export default (nestedItemContent: Element) => {
                     })
                 })
 
-                let moreNested = nestedItemContent.classSelector(CLASS.moreNested)!
-                if (moreNested.innerHTML.isBlank()) observer.disconnect()
+                if (!isShowPostURL) {
+                    let moreNested = nestedItemContent.classSelector(CLASS.moreNested)!
+                    if (moreNested.innerHTML.isBlank()) observer.disconnect()
+                }
             }
         })
     }

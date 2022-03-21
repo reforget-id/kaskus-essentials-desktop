@@ -4,11 +4,12 @@ import {fields} from '~src/settings/setting-fields'
 const quoteField = 'quotedText'
 
 export const wideHotThread = () => GM_config.get(fields.wideHotThread.name) as boolean
-export const maxReply = () => parseInt(<string>GM_config.get(fields.maxReply.name))
-export const scrollMode = () => GM_config.get(fields.scrollModeNC.name) as boolean
+export const newTablastPost = () => GM_config.get(fields.newTabLastPost.name) as boolean
 export const fabFormReply = () => GM_config.get(fields.fabFormReply.name) as boolean
 export const goToPage = () => GM_config.get(fields.goToPage.name) as boolean
-export const newTablastPost = () => GM_config.get(fields.newTabLastPost.name) as boolean
+export const maxReply = () => parseInt(<string>GM_config.get(fields.maxReply.name))
+export const scrollMode = () => GM_config.get(fields.scrollModeNC.name) as boolean
+export const replyReputation = () => GM_config.get(fields.replyReputation.name) as boolean
 
 export const quoteText = {
     save: (text: string) => GM_setValue(quoteField, text),

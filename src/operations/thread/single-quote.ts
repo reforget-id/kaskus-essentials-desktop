@@ -20,8 +20,8 @@ export default (post: Element) => {
 
     singleQuoteButton.applyIt(function () {
         this.href = 'javascript:void(0);'
+        this.className = CLASS.quoteClass + ' Fz(16px)'
         this.setAttribute('onclick', clickAction)
-        this.setAttribute('class', CLASS.quoteClass + ' Fz(16px)')
         this.innerHTML = ` 
             <i class="fas C(c-secondary) fa-comment Mend(2px)"></i>
             <span class="C(c-secondary) Fz(12px)">Single Quote</span>

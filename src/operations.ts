@@ -3,6 +3,7 @@ import {Operation, operation} from 'userscripter/lib/operations'
 import deleteQuotedText from '~operations/delete-quoted-text'
 import getQuotedText from '~operations/get-quoted-text'
 import lastPostLastPage from '~operations/last-post-last-page'
+import singlePost from '~operations/nested-comments/single-post'
 import newTabLastPost from '~operations/new-tab-last-post'
 import redirectShowPost from '~operations/redirect-show-post'
 import deletedPost from '~operations/thread/deleted-post'
@@ -96,6 +97,12 @@ const OPERATIONS: ReadonlyArray<Operation<any>> = [
         description: 'Setup fitur Go to Page',
         condition: () => isOnThreadPage && SETTING.goToPage(),
         action: goToPage,
+        deferUntil: DOMCONTENTLOADED,
+    }),
+    operation({
+        description: 'Aksi pada halaman single post',
+        condition: () => isShowPostURL,
+        action: singlePost,
         deferUntil: DOMCONTENTLOADED,
     }),
 ]

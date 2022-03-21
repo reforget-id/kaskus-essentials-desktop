@@ -17,13 +17,13 @@ export default (nestedTrigger: HTMLElement, nestedItemContent: Element) => {
         scrollConfig.behavior = 'smooth'
     }
 
-    scrollToBottom.setAttribute('class', 'Mstart(a) Mend(10px) Cur(p) D(n)')
+    scrollToBottom.className = 'Mstart(a) Mend(10px) Cur(p) D(n)'
     scrollToBottom.innerHTML = `
         <span class="C(c-blue) Mend(10px)">Scroll to bottom</span> 
         <i class="far C(c-blue-dark) fa-angle-down"></i>
     `
 
-    scrollToTop.setAttribute('class', 'Mstart(a) Mend(10px) Cur(p) My(a) P(10px) D(n)')
+    scrollToTop.className = 'Mstart(a) Mend(10px) Cur(p) My(a) P(10px) D(n)'
     scrollToTop.innerHTML = `
         <span class="C(c-blue) Mend(10px)">Scroll to top</span> 
         <i class="far C(c-blue-dark) fa-angle-up"></i>

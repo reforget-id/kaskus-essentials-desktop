@@ -104,6 +104,13 @@ export const fields = { //Record<string, Field>
         type: 'checkbox',
         default: true,
     },
+    replyReputation: {
+        name: 'replyReputation',
+        label: 'Tampilkan pemberi reputasi pada reply ',
+        labelPos: 'right',
+        type: 'checkbox',
+        default: true,
+    },
     kaskusThread: {
         section: ['', 'Support'],
         label: 'Kaskus Thread',

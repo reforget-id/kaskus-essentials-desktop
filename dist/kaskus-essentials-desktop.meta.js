@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Kaskus Essentials (Desktop)
-// @version      0.9.1
+// @version      0.9.2
 // @description  Untuk pengalaman ngaskus yang lebih baik
 // @author       reforget-id (ffsuperteam)
 // @match        https://www.kaskus.co.id/*

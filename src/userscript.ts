@@ -1,7 +1,7 @@
 export default {
     id: 'kaskus-essentials-desktop',
     name: 'Kaskus Essentials (Desktop)',
-    version: '0.9.1',
+    version: '0.9.2',
     description: 'Untuk pengalaman ngaskus yang lebih baik',
     author: 'reforget-id (ffsuperteam)',
     hostname: 'www.kaskus.co.id',

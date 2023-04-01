@@ -53,7 +53,7 @@ export const ATTRIBUTE = {
 export const PATH = {
     HOME: 'home',
     CHANNEL: 'channel',
-    FORUM: 'forum',
+    FORUM: 'komunitas',
     THREAD: 'thread',
     POST: 'post',
     LAST_POST: 'lastpost',
